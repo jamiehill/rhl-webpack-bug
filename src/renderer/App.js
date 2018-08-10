@@ -1,5 +1,6 @@
 import React from 'react'
-import { hot } from 'react-hot-loader'
+// import { hot } from 'react-hot-loader/dist/react-hot-loader.development.js' // DOES WORK
+import { hot } from 'react-hot-loader' // DONES NOT WORK
 
 class App extends React.Component {
     constructor () {
@@ -14,7 +15,7 @@ class App extends React.Component {
     render () {
         return (
             <div>
-                <div>Hello World</div>
+                <div>Hello </div>
                 <button onClick={this.increment.bind(this)} />
                 <div>{this.state.count}</div>
             </div>
